@@ -21,7 +21,7 @@ const Header = () => {
             <NavLink href="/">Home</NavLink>
             <NavLink href="/menu">Menu</NavLink>
             <Button asChild variant="default" size="sm">
-              <Link href="/order">Order Online</Link>
+              <Link href="/links">Socials/Links</Link>
             </Button>
           </div>
         </nav>
