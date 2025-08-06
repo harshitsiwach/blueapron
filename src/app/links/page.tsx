@@ -1,30 +1,32 @@
-import React from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Link, FileText } from 'lucide-react';
 
-interface LinkItem {
-  name: string;
-  url: string;
-}
+const links = [
+  {
+    name: 'Order from Zomato',
+    url: 'https://link.zomato.com/xqzv/rshare?id=113182333305630f0',
+    icon: <Link className="h-5 w-5 mr-3" />
+  },
+  {
+    name: 'View Full Menu',
+    url: '/The Blue Apron Menu Card.pdf',
+    icon: <FileText className="h-5 w-5 mr-3" />
+  },
+];
 
-const LinksPage: React.FC = () => {
-  const links: LinkItem[] = [
-    { name: 'Order Online', url: 'https://example.com/order' },
-    { name: 'View Menu', url: 'https://example.com/menu' },
-    { name: 'Make a Reservation', url: 'https://example.com/reserve' },
-    { name: 'Directions', url: 'https://example.com/directions' },
-  ];
-
+export default function LinksPage() {
   return (
-    <div className="container mx-auto py-8">
-      <Card className="max-w-md mx-auto">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 flex justify-center">
+      <Card className="w-full max-w-lg shadow-lg">
         <CardHeader className="text-center">
-          <CardTitle>Our Links</CardTitle>
+          <CardTitle className="text-3xl font-heading">Find Us Online</CardTitle>
         </CardHeader>
-        <CardContent className="flex flex-col space-y-4">
+        <CardContent className="flex flex-col space-y-4 p-6">
           {links.map((link) => (
-            <Button key={link.name} asChild>
-              <a href={link.url} target="_blank" rel="noopener noreferrer">
+            <Button key={link.name} asChild size="lg" variant="outline">
+              <a href={link.url} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
+                {link.icon}
                 {link.name}
               </a>
             </Button>
@@ -33,6 +35,4 @@ const LinksPage: React.FC = () => {
       </Card>
     </div>
   );
-};
-
-export default LinksPage;
+}

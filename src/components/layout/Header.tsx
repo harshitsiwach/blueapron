@@ -1,15 +1,12 @@
 import Link from 'next/link';
 import Logo from '@/components/Logo';
 import { Button } from '@/components/ui/button';
-
-const NavLink = ({ href, children, className }: { href: string; children: React.ReactNode; className?: string }) => (
-  <Link 
-    href={href} 
-    className={`text-foreground hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium ${className || ''}`}
-  >
-    {children}
-  </Link>
-);
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
 
 const Header = () => {
   return (
@@ -18,10 +15,20 @@ const Header = () => {
         <nav className="flex items-center justify-between h-20">
           <Logo />
           <div className="flex items-center space-x-2 sm:space-x-4">
-            <NavLink href="/">Home</NavLink>
-            <NavLink href="/menu">Menu</NavLink>
-            <Button asChild variant="default" size="sm">
-              <Link href="/links">Socials/Links</Link>
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <Button asChild variant="outline" size="sm">
+                    <Link href="/links">Socials/Links</Link>
+                  </Button>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Coming soon</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+            <Button asChild variant="default" size="sm" className="bg-zomato hover:bg-zomato/90">
+              <Link href="https://link.zomato.com/xqzv/rshare?id=113182333305630f0" target="_blank">Order from Zomato</Link>
             </Button>
           </div>
         </nav>
