@@ -45,16 +45,16 @@ export default function HomePage() {
           <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12 text-primary font-heading">Our Signature Touch</h2>
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div className="p-6">
-              <CardTitle className="text-xl mb-2 text-primary">Premium</CardTitle>
+              <CardTitle className="text-xl mb-2 text-primary">Finest Ingredients</CardTitle>
               <CardDescription>We source the freshest local produce and high-quality ingredients for every dish.</CardDescription>
             </div>
             <div className="p-6">
-              <CardTitle className="text-xl mb-2 text-primary">Exceptional</CardTitle>
-              <CardDescription>Our experienced chefs pour their passion and expertise into creating culinary masterpieces.</CardDescription>
+              <CardTitle className="text-xl mb-2 text-primary">Innovative Flavours</CardTitle>
+              <CardDescription>Classic tastes redefined with a modern edge, we reimagine familiar flavours to surprise and delight with every creation.</CardDescription>
             </div>
             <div className="p-6">
-              <CardTitle className="text-xl mb-2 text-primary">Unforgettable</CardTitle>
-              <CardDescription>Enjoy your meal in a comfortable and inviting setting, perfect for any occasion.</CardDescription>
+              <CardTitle className="text-xl mb-2 text-primary">Delivered Delight</CardTitle>
+              <CardDescription>Exceptional food, elegantly packed and promptly delivered, because indulgence should be effortless.</CardDescription>
             </div>
           </div>
         </div>
