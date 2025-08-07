@@ -91,3 +91,26 @@
     flex-grow: 1;
   }
 }
+
+@layer components {
+  .golden-glow {
+    border-color: #FFD700; /* Gold */
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+    animation: glitter 1.5s infinite;
+  }
+
+  .golden-glow:hover {
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+  }
+}
+
+@keyframes glitter {
+  0%, 100% {
+    border-color: #FFD700;
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+  }
+  50% {
+    border-color: #F0E68C; /* Khaki */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+  }
+}

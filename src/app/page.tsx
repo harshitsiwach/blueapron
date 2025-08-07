@@ -23,8 +23,8 @@ export default function HomePage() {
               <Button asChild size="lg" variant="default">
                 <a href="/The Blue Apron Menu Card.pdf" target="_blank" rel="noopener noreferrer">View Our Menu</a>
               </Button>
-              <Button asChild size="lg" variant="outline">
-                <a href="/order">Order Now</a>
+              <Button asChild size="lg" variant="outline" className="golden-glow">
+                <a href="https://link.zomato.com/xqzv/rshare?id=113182333305630f0" target="_blank" rel="noopener noreferrer">Order Now</a>
               </Button>
             </div>
           </div>
@@ -35,9 +35,7 @@ export default function HomePage() {
       <section id="about" className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 text-left">
         <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-primary font-heading">Welcome to The Blue Apron</h2>
         <p className="text-lg text-muted-foreground max-w-3xl leading-relaxed">
-          At The Blue Apron, we believe that dining is more than just eating; it&apos;s an experience. 
-          Our chefs meticulously prepare each dish using the freshest local ingredients, bringing you a delightful fusion of traditional recipes and modern culinary techniques. 
-          Join us for a memorable meal that will tantalize your taste buds.
+          The Blue Apron brings you a premium experience defined by exceptional taste and unforgettable moments. Every detail, from carefully sourced ingredients to the elegant layering of flavours, is thoughtfully curated to create an experience that is both indulgent and refined. It is a place where precision, creativity, and finesse converge, transforming food into a sensory journey. With every offering, The Blue Apron delivers not just a meal but a lasting impression.
         </p>
       </section>
       
@@ -47,15 +45,15 @@ export default function HomePage() {
           <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12 text-primary font-heading">Our Signature Touch</h2>
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div className="p-6">
-              <CardTitle className="text-xl mb-2 text-primary">Finest Ingredients</CardTitle>
+              <CardTitle className="text-xl mb-2 text-primary">Premium</CardTitle>
               <CardDescription>We source the freshest local produce and high-quality ingredients for every dish.</CardDescription>
             </div>
             <div className="p-6">
-              <CardTitle className="text-xl mb-2 text-primary">Skilled Artistry</CardTitle>
+              <CardTitle className="text-xl mb-2 text-primary">Exceptional</CardTitle>
               <CardDescription>Our experienced chefs pour their passion and expertise into creating culinary masterpieces.</CardDescription>
             </div>
             <div className="p-6">
-              <CardTitle className="text-xl mb-2 text-primary">Warm Ambiance</CardTitle>
+              <CardTitle className="text-xl mb-2 text-primary">Unforgettable</CardTitle>
               <CardDescription>Enjoy your meal in a comfortable and inviting setting, perfect for any occasion.</CardDescription>
             </div>
           </div>
@@ -64,35 +62,35 @@ export default function HomePage() {
 
       {/* Contact & Location Section */}
       <section id="contact" className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12 text-primary font-heading">Visit Us or Get In Touch</h2>
+        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12 text-primary font-heading">Get In Touch</h2>
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
             <div className="flex items-start space-x-4">
               <MapPin className="h-6 w-6 text-primary mt-1" />
               <div>
                 <h3 className="text-xl font-semibold text-primary">Address</h3>
-                <p className="text-muted-foreground">123 Culinary Street, Foodville, Flavor Town, India 400001</p>
+                <p className="text-muted-foreground">Chandigarh || Panchkula || Mohali </p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
               <Phone className="h-6 w-6 text-primary mt-1" />
               <div>
                 <h3 className="text-xl font-semibold text-primary">Contact Us</h3>
-                <p className="text-muted-foreground">Email: info@theblueapron.in</p>
-                <p className="text-muted-foreground">Phone: +91 98765 43210</p>
+                <p className="text-muted-foreground">Email: contact@theblueapron.in</p>
+                <p className="text-muted-foreground">Phone: +91 8284870918</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
               <UtensilsCrossed className="h-6 w-6 text-primary mt-1" />
               <div>
                 <h3 className="text-xl font-semibold text-primary">Hours of Operation</h3>
-                <p className="text-muted-foreground">Monday - Friday: 11:00 AM - 10:00 PM</p>
-                <p className="text-muted-foreground">Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+                {/* <p className="text-muted-foreground">Monday - Friday: 11:00 AM - 10:00 PM</p> */}
+                <p className="text-muted-foreground">Monday - Sunday: 06:00 PM - 03:00 AM</p>
               </div>
             </div>
           </div>
           <div className="h-64 md:h-full w-full bg-secondary/40 rounded-lg flex items-center justify-center">
-             <p className="text-muted-foreground">Map placeholder</p>
+             <p className="text-muted-foreground">Google Maps placeholder</p>
           </div>
         </div>
       </section>

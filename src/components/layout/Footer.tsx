@@ -6,7 +6,7 @@ const Footer = () => {
           &copy; {new Date().getFullYear()} The Blue Apron. All rights reserved.
         </p>
         <p className="text-xs text-muted-foreground/80 mt-1">
-          123 Culinary Street, Foodville, India | Phone: (123) 456-7890
+          Chandigarh | Mohali | Panchkula | Phone: +91 8284870918
         </p>
       </div>
     </footer>

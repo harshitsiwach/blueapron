@@ -7,6 +7,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
+import InstagramIcon from '../ui/InstagramIcon';
 
 const Header = () => {
   return (
@@ -15,6 +16,18 @@ const Header = () => {
         <nav className="flex items-center justify-between h-20">
           <Logo />
           <div className="flex items-center space-x-2 sm:space-x-4">
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <a href="https://www.instagram.com/theblueapron.in?igsh=ZWhtdHg3Nzk2dGky" target="_blank" rel="noopener noreferrer">
+                    <InstagramIcon className="w-6 h-6" />
+                  </a>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Instagram</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger asChild>
