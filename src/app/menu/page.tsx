@@ -72,7 +72,7 @@ export default function MenuPage() {
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
       <header className="text-center mb-12 md:mb-16">
         <Utensils className="mx-auto h-12 w-12 text-primary mb-4" />
-        <h1 className="text-4xl md:text-5xl font-bold text-foreground font-heading">Our Exquisite Menu</h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-foreground font-sans">Our Exquisite Menu</h1>
         <p className="text-lg text-muted-foreground mt-2 max-w-2xl mx-auto">
           Discover a variety of dishes crafted with the freshest ingredients and authentic recipes.
         </p>
@@ -81,7 +81,7 @@ export default function MenuPage() {
       <Accordion type="multiple" className="w-full max-w-4xl mx-auto">
         {Object.entries(menuData).map(([category, items]) => (
           <AccordionItem key={category} value={category}>
-            <AccordionTrigger className="text-2xl font-semibold font-heading hover:no-underline">
+            <AccordionTrigger className="text-2xl font-semibold font-sans hover:no-underline">
               {category}
             </AccordionTrigger>
             <AccordionContent>

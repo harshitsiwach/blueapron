@@ -85,7 +85,7 @@
     flex-direction: column;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-heading;
+    @apply font-sans font-semibold;
   }
   main {
     flex-grow: 1;

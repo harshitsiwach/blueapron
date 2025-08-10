@@ -20,7 +20,7 @@ export default function LinksPage() {
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 flex justify-center">
       <Card className="w-full max-w-lg shadow-lg">
         <CardHeader className="text-center">
-          <CardTitle className="text-3xl font-heading">Find Us Online</CardTitle>
+          <CardTitle className="text-3xl font-sans">Find Us Online</CardTitle>
         </CardHeader>
         <CardContent className="flex flex-col space-y-4 p-6">
           {links.map((link) => (

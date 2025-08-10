@@ -13,7 +13,7 @@ export default function HomePage() {
             <Logo className="w-full h-auto max-w-md" />
           </div>
           <div className="text-center md:text-left">
-            <h1 className="text-4xl md:text-6xl font-bold text-primary mb-4 font-heading">
+            <h1 className="text-4xl md:text-6xl font-bold text-primary mb-4 font-sans">
               The Blue Apron
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8">
@@ -33,7 +33,7 @@ export default function HomePage() {
 
       {/* About Us Section */}
       <section id="about" className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 text-left">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-primary font-heading">Welcome to The Blue Apron</h2>
+        <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-primary font-sans">Welcome to The Blue Apron</h2>
         <p className="text-lg text-muted-foreground max-w-3xl leading-relaxed">
           The Blue Apron brings you a premium experience defined by exceptional taste and unforgettable moments. Every detail, from carefully sourced ingredients to the elegant layering of flavours, is thoughtfully curated to create an experience that is both indulgent and refined. It is a place where precision, creativity, and finesse converge, transforming food into a sensory journey. With every offering, The Blue Apron delivers not just a meal but a lasting impression.
         </p>
@@ -42,7 +42,7 @@ export default function HomePage() {
       {/* Featured Section */}
        <section className="w-full bg-secondary/30 py-16 lg:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12 text-primary font-heading">Our Signature Touch</h2>
+          <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12 text-primary font-sans">Our Signature Touch</h2>
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div className="p-6">
               <CardTitle className="text-xl mb-2 text-primary">Finest Ingredients</CardTitle>
@@ -62,7 +62,7 @@ export default function HomePage() {
 
       {/* Contact & Location Section */}
       <section id="contact" className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12 text-primary font-heading">Get In Touch</h2>
+        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12 text-primary font-sans">Get In Touch</h2>
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
             <div className="flex items-start space-x-4">
